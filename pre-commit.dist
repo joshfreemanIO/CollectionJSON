@@ -1,0 +1,36 @@
+#!/usr/bin/ruby
+
+# https://www.ruby-forum.com/topic/122170#544763
+
+git_files = `git diff --cached --name-only`.lines.map(&:chomp)
+project_path = `git rev-parse --show-toplevel`.chomp
+
+offending_lines = {}
+
+def File.binary? name
+  open name do |f|
+    while (b=f.read(256)) do
+      return true if b[ "\0"]
+    end
+  end
+  false
+end
+
+success = true
+
+git_files.each do |file|
+  if File.basename(file) =~ /(?<!blade\.)php$/
+
+    output = `php #{project_path}/vendor/bin/phpcs --standard=psr2 #{project_path}/#{file}`
+
+    if not $?.success?
+      puts output
+      success = false
+    end
+  end
+end
+
+if not success
+  exit 1
+end
+
