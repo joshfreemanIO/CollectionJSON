@@ -1,0 +1,17 @@
+{
+    "name": "jdfreeman/collectionplusjson",
+    "description": "The source for the PHP implentation of the Collection+JSON specification",
+    "require": {
+    },
+    "require-dev": {
+        "phpspec/phpspec": "2.0.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Josh Freeman",
+            "email": "jdfreeman11@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
