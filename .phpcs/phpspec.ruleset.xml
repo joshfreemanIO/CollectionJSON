@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<ruleset name="Custom">
+ <description>PSR-2, ignoring method casing for PHPSpec</description>
+ <rule ref="PSR2">
+  <exclude name="PSR1.Methods.CamelCapsMethodName"/>
+ </rule>
+</ruleset>
