@@ -16,13 +16,35 @@ use Prophecy\Argument;
 
 class %name% extends ObjectBehavior
 {
+    /**
+     * Setup the specification
+     *
+     * @return void
+     */
     public function let()
     {
 
     }
 
-    public function letup()
+    /**
+     * Tear down the specification
+     *
+     * @return void
+     */
+    public function letUp()
     {
 
+    }
+
+    /**
+     * Test that the class exists
+     *
+     * This spec is auto-generated
+     *
+     * @return void
+     */
+    public function itIsInitializable()
+    {
+        $this->shouldHaveType('%subject%');
     }
 }
