@@ -1,5 +1,6 @@
 suites:
 
     full_suite:
-        namespace: JDFreeman\CollectionPlusJSON
+        namespace: JDFreeman\CollectionJSON
         src_path: "./src/"
+        spec_name: Spec

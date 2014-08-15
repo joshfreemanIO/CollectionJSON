@@ -1,5 +1,5 @@
 {
-    "name": "jdfreeman/collectionplusjson",
+    "name": "jdfreeman/collectionjson",
     "description": "The source for the PHP implentation of the Collection+JSON specification",
     "require": {
     },
@@ -17,7 +17,7 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "JDFreeman\\Collection\\": "src/"
+            "JDFreeman\\CollectionJSON\\": "src/"
         }
     }
 }
