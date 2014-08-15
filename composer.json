@@ -4,7 +4,8 @@
     "require": {
     },
     "require-dev": {
-        "phpspec/phpspec": "2.0.1"
+        "phpspec/phpspec": "2.0.1",
+        "squizlabs/php_codesniffer": "1.*"
     },
     "license": "MIT",
     "authors": [
@@ -13,5 +14,10 @@
             "email": "jdfreeman11@gmail.com"
         }
     ],
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "JDFreeman\\Collection\\": "src/"
+        }
+    }
 }
