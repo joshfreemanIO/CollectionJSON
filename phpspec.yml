@@ -1,0 +1,5 @@
+suites:
+
+    full_suite:
+        namespace: JDFreeman\CollectionPlusJSON
+        src_path: "./src/"
