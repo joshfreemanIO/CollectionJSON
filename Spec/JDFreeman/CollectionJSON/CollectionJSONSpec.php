@@ -31,7 +31,7 @@ class CollectionJSONSpec extends ObjectBehavior
      *
      * @return void
      */
-    public function letUp()
+    public function letgo()
     {
 
     }
