@@ -16,7 +16,12 @@ use Prophecy\Argument;
 
 class %name% extends ObjectBehavior
 {
-    function let()
+    public function let()
+    {
+
+    }
+
+    public function letup()
     {
 
     }
