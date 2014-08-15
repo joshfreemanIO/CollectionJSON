@@ -3,4 +3,4 @@ suites:
     full_suite:
         namespace: JDFreeman\CollectionJSON
         src_path: "./src/"
-        spec_name: Spec
+        spec_prefix: Spec
