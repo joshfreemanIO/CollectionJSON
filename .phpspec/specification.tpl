@@ -31,7 +31,7 @@ class %name% extends ObjectBehavior
      *
      * @return void
      */
-    public function letUp()
+    public function letgo()
     {
 
     }
@@ -43,7 +43,7 @@ class %name% extends ObjectBehavior
      *
      * @return void
      */
-    public function itIsInitializable()
+    public function it_is_initializable()
     {
         $this->shouldHaveType('%subject%');
     }
